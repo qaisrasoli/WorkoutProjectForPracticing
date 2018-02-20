@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abtech.workoutprojectforpracticing.StopWatchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="0:00:00:00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timerText"
+                android:textSize="35sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="109dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" />
+
+            <Button
+                android:text="@string/start_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp"
+                android:id="@+id/startButton"
+                android:layout_below="@+id/timerText"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="@string/stop_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stopButton"
+                android:layout_marginTop="46dp"
+                android:layout_below="@+id/startButton"
+                android:layout_alignLeft="@+id/startButton"
+                android:layout_alignStart="@+id/startButton" />
+
+            <Button
+                android:text="@string/reset_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stopButton"
+                android:layout_alignLeft="@+id/stopButton"
+                android:layout_alignStart="@+id/stopButton"
+                android:layout_marginTop="46dp"
+                android:id="@+id/resetButton" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
